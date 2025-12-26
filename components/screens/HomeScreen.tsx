@@ -97,13 +97,14 @@ export default function HomeScreen() {
             <input
               id="create-name"
               type="text"
+              dir="auto"
               value={name}
               onChange={(e) => setName(e.target.value)}
               onKeyDown={(e) => handleKeyDown(e, handleCreate)}
               placeholder="Your nickname"
               maxLength={20}
               aria-label="Enter your nickname"
-              className="w-full p-4 border-2 border-pink-200 rounded-xl focus:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-200"
+              className="w-full p-4 border-2 border-pink-200 rounded-xl focus:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-200 text-black placeholder:text-gray-400"
             />
             <button
               onClick={handleCreate}
@@ -142,12 +143,13 @@ export default function HomeScreen() {
             <input
               id="join-name"
               type="text"
+              dir="auto"
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Your nickname"
               maxLength={20}
               aria-label="Enter your nickname"
-              className="w-full p-4 border-2 border-pink-200 rounded-xl focus:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-200"
+              className="w-full p-4 border-2 border-pink-200 rounded-xl focus:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-200 text-black placeholder:text-gray-400"
             />
             <label htmlFor="join-code" className="sr-only">5-digit lobby code</label>
             <input
@@ -160,7 +162,7 @@ export default function HomeScreen() {
               placeholder="5-digit code"
               maxLength={5}
               aria-label="Enter 5-digit lobby code"
-              className="w-full p-4 border-2 border-pink-200 rounded-xl focus:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-200 text-center text-2xl tracking-widest font-mono"
+              className="w-full p-4 border-2 border-pink-200 rounded-xl focus:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-200 text-center text-2xl tracking-widest font-mono text-black placeholder:text-gray-400"
             />
             <button
               onClick={handleJoin}

@@ -80,7 +80,8 @@ export default function QuestionCard({
             disabled={disabled}
             maxLength={question.maxLen || 200}
             aria-label="Type your answer"
-            className="w-full p-4 border-2 border-pink-200 rounded-xl focus:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-200 resize-none h-24 text-gray-900 placeholder:text-gray-400 disabled:bg-gray-100 disabled:text-gray-500"
+            dir="auto"
+            className="w-full p-4 border-2 border-pink-200 rounded-xl focus:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-200 resize-none h-24 text-black placeholder:text-gray-400 disabled:bg-gray-100 disabled:text-gray-500"
           />
           {showSubmit && (
             <button
